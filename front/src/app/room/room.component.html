@@ -1,0 +1,6 @@
+Hello {{roomId}}
+
+<p>Gists</p>
+<p *ngFor="let gist of gists">{{gist.text ? gist.text : gist}}</p>
+
+<input type="text" (keyup.enter)="postToRoom($event.target.value)"/>
